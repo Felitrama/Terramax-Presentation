@@ -1,0 +1,15 @@
+{
+  "name": "terramax-presentacion-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader native --host 127.0.0.1",
+    "build": "vite build --configLoader native",
+    "preview": "vite preview --configLoader native --host 127.0.0.1",
+    "serve": "node scripts/serve.mjs",
+    "test:e2e": "node tests/presentation.mjs"
+  },
+  "dependencies": {"react": "19.2.4", "react-dom": "19.2.4"},
+  "devDependencies": {"vite": "7.3.3", "playwright": "1.63.0"}
+}
