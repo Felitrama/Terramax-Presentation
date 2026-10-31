@@ -1,6 +1,6 @@
 # TerraMax · Grupo 7
 
-Presentación web de diez diapositivas, construida con React, Vite, HTML, CSS y SVG. Una sola diapositiva visible, composición 16:9 y escalado proporcional. Conserva el contenido y agrega cinco segundos de agradecimiento al guion anterior: cuatro expositores, **6:00 estimados**.
+Presentación web de diez diapositivas, construida con React, Vite, HTML, CSS y SVG.
 
 ## Requisitos e instalación
 
@@ -41,14 +41,6 @@ Dejar la terminal abierta mientras se usa la presentación. Detener el servidor 
 La navegación se detiene en la primera y la última diapositiva. El indicador y la barra inferior muestran el avance. La dirección conserva el número de diapositiva: `/#8`, por ejemplo, abre la proyección financiera. No hay avance automático.
 
 Para el aula, usar zoom del navegador al 100%, abrir la ventana principal en el proyector y pulsar `F`. Si el navegador bloquea la API de pantalla completa, se puede usar `F11` como alternativa; esa modalidad se cierra con `F11`.
-
-## Notas del presentador
-
-Pulsar `P` **antes de empezar**. Permitir la ventana emergente si el navegador lo solicita. En una configuración de escritorio extendido, mover las notas a la pantalla personal y dejar la ventana principal en el proyector. Después activar pantalla completa en la principal.
-
-Las notas muestran el texto original, el expositor, el tiempo asignado y el intervalo de la intervención. Se sincronizan con la diapositiva principal mediante `BroadcastChannel`; las flechas de la ventana de notas también controlan la principal. Ambas ventanas deben permanecer abiertas en el mismo navegador y origen. La ventana de notas no es una segunda presentación autónoma. Su panel de texto puede desplazarse sin afectar la diapositiva proyectada.
-
-El archivo `guion_exposicion_terramax.md` conserva el guion completo y las notas para responder preguntas. Las intervenciones originales se conservan; se añadió un cierre de cinco segundos.
 
 ## Producción y funcionamiento sin Internet
 
@@ -92,14 +84,6 @@ public/images/     Imagen original del paisaje, disponible sin conexión
 dist/              Compilación lista para servir sin conexión
 test-results/      Capturas y resultado de la validación local
 ```
-
-## Criterios del contenido
-
-La diapositiva 10 cierra con «Gracias. ¿Preguntas?» y un paisaje ganadero original generado con `image_gen`. Se integra como archivo local, con tonos desaturados y composición despejada. El prompt y su procedencia están en `public/images/ORIGEN.md`. Es una imagen conceptual, no una fotografía documental del proyecto.
-
-Se reutilizaron las fuentes y cifras de la presentación anterior. Los importes son estimaciones académicas en ARS constantes de 2026. Se distinguen inversión inicial, costos de operación, ingresos, flujo operativo y flujo total. El recupero alrededor del mes 22 supone flujo uniforme en el segundo año. No se añadió un costo de salida ni indicadores financieros nuevos.
-
-La tabla financiera usa millones de ARS para importes; clientes y equilibrio son cantidades. La inversión inicial es ARS 12 M y no equivale a toda la necesidad de caja. El guion conserva la explicación del déficit máximo de ARS 17,24 M del anexo como respuesta de apoyo.
 
 ## Validación
 
